@@ -399,10 +399,50 @@
  <!-- End Contact -->
 
 
+ <script>
+	(function (w,d,s,o,f,js,fjs) {
+		w['circleWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+		js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+		js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+	}(window, document, 'script', 'mw', 'https://ambrellas-community.circle.so/external/widget.js'));
+  
+	mw('init', {
+	  community_public_uid: '59972741',
+	  brand_color_dark: '#FFFFFF',
+	  brand_color_light: '#2B2E33',
+	  default_appearance: 'light'
+	});
+  
+	// Optional: pass in a default space slug and/or post slug
+	// mw('setDefaults', {
+	//   space_slug: '',
+	//   post_slug: ''
+	// });
+  </script>
+
+
 
  <!-- jquery -->
+ <script type="text/javascript">
+	(function(d, t) {
+		var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		v.onload = function() {
+		  window.voiceflow.chat.load({
+			verify: { projectID: '66a13314fe7738be9c34cce6' },
+			url: 'https://general-runtime.voiceflow.com',
+			versionID: 'production'
+		  });
+		}
+		v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+	})(document, 'script');
+  </script>
+ 
+
+<script> var MemberSpace = window.MemberSpace || {"subdomain":"circle13"}; (function(d){ var s = d.createElement("script"); s.src = "https://cdn.memberspace.com/scripts/widgets.js"; var e = d.getElementsByTagName("script")[0]; e.parentNode.insertBefore(s,e); }(document)); </script>
+
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
 <script>
 	$(document).ready(function(){
 
